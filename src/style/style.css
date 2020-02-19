@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+}
+
+.all-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.vanta-canvas {
+  position: fixed !important;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.wrapper .logo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  height: 150px;
+}
+
+.wrapper .search-box {
+  border-style: none;
+  text-indent: 15px;
+  font-size: 20px;
+  width: 600px;
+  height: 45px;
+  border-radius: 1rem 0 1rem 0;
+  -webkit-box-shadow: 1px 1px 12px #F9D71C;
+          box-shadow: 1px 1px 12px #F9D71C;
+}
+
+.wrapper .found-item-count, .wrapper .loading {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.wrapper .person-wrapper {
+  width: 600px;
+  margin-bottom: 25px;
+}
+
+.wrapper .person-wrapper .person {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  color: #000000;
+  background-color: white;
+  border-radius: 1rem 0 1rem 0;
+  -webkit-box-shadow: 1px 1px 12px #F9D71C;
+          box-shadow: 1px 1px 12px #F9D71C;
+}
+
+.wrapper .person-wrapper .person h5 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    width: 100vw;
+  }
+  .wrapper {
+    padding: 0 0rem;
+  }
+  .wrapper .logo {
+    height: 100px;
+    padding: 0 0rem;
+  }
+  .wrapper .search-box {
+    width: 300px;
+    height: 45px;
+  }
+  .wrapper .person-wrapper {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

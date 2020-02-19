@@ -1,0 +1,54 @@
+.person-wrapper {
+  width: 600px;
+  margin-bottom: 24px;
+  .link {
+    text-decoration: none;
+    .person {
+      margin-top: 24px;
+      padding-bottom: 24px;
+      font-size: 18px;
+      color: $black;
+      background-color: white;
+      border-radius: 1rem 0 1rem 0;
+      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.5);
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: transparent;
+      }
+
+      &:hover {
+        &:after {
+          background: currentColor;
+          opacity: 0.06;
+        }
+      }
+
+      &:active {
+        &:after {
+          background: currentColor;
+          opacity: 0.12;
+        }
+      }
+
+      h5 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .person-wrapper {
+    width: 300px;
+  }
+}

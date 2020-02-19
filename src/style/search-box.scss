@@ -1,0 +1,23 @@
+.search-box {
+  border-style: none;
+  text-indent: 15px;
+  font-size: 20px;
+  width: 600px;
+  height: 45px;
+  border-radius: 1rem 0 1rem 0;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.5);
+}
+
+.found-item-count,
+.loading {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-box {
+    width: 300px;
+    height: 45px;
+  }
+}
